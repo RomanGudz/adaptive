@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./style/index.css">
+  <script type="module" src="./script.js"></script>
   <title>Adaptive</title>
 </head>
 
@@ -13,15 +14,15 @@
 
   <header class="header">
     <div class="container">
-      <nav class="header__navigate">
-        <img src="./img/Logo.svg" alt="Логотип компании" class="header__logo">
+      <div class="header__navigate">
+        <a href="#" class="header__logo-link"></a>
         <a href="tel:+79625561234" class="header__phone hidden">
           +7 (962) 556 - 1234
           <span class="header__phone-span">Перезвоните мне</span>
         </a>
         <a href="tel:+79625561234" class="header__phone hidden-img"><img src="./img/Phone.svg"
             alt="телефоная трубка"></a>
-      </nav>
+      </div>
 
       <h1 class="header__title-h1">Заголовок c уникальным торговым предложение по системе 4U</h1>
       <h3 class="header__title-h3">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику,
@@ -45,8 +46,10 @@
 
         <ul class="about__list">
           <li class="about__list-item">
+            <button class="about__list-item-button-left" id="left"></button>
             <h3 class="about__list-item-title">1</h3>
             <p class="about__list-item-p">Первое целевое преимущество</p>
+            <button class="about__list-item-button-right" id="right"></button>
           </li>
           <li class="about__list-item">
             <h3 class="about__list-item-title">2</h3>
@@ -86,7 +89,7 @@
     <div class="container">
       <div class="footer-wrapper">
         <div class="footer-wrapper-logo">
-          <img src="./img/Logo.svg" alt="Логотип компании" class="footer__logo">
+          <a href="#" class="footer__logo-link"></a>
           <p class="footer__wrapper-p">© 2022 XXXcompany.
             Все права защищены.</p>
         </div>

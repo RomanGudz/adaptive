@@ -21,7 +21,11 @@
   font-size: 12px;
   line-height: 141%;
 }
-.footer__logo {
+.footer__logo-link {
+  background-image: url("../img/Logo.svg");
+  background-size: contain;
+  height: 68px;
+  width: 68px;
 }
 .footer__wrapper-p {
   white-space: pre-line;
@@ -55,7 +59,7 @@
     font-size: 10px;
   }
 
-  .footer__logo {
+  .footer__logo-link {
     height: 60px;
     width: 60px;
   }
@@ -72,7 +76,7 @@
     padding: 37px 0 49px;
     font-size: 10px;
   }
-  .footer__logo {
+  .footer__logo-link {
     height: 40px;
     width: 40px;
   }
