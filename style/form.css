@@ -1,13 +1,14 @@
 .form {
-  position: relative;
   height: 100%;
   width: 100%;
   background-image: url("../img/people.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  fill: rgba(47, 50, 75, 0.85);
   padding: 70px 0;
   text-align: center;
+  position: relative;
 }
 
 .form::before {
@@ -22,9 +23,10 @@
 .form__title-h2 {
   font-weight: 700;
   font-size: 35px;
+  padding-right: 23px;
 }
 .form__title-h3 {
-  padding-top: 17px;
+  padding-top: 19px;
   font-weight: 500;
   font-size: 22px;
   color: rgba(255, 255, 255, 0.8);
@@ -40,19 +42,21 @@
   border: 1.38px solid #fff;
   border-radius: 50px;
   font-size: 22px;
-  width: 100%;
+
+  width: 423px;
+  height: 44px;
   color: rgba(255, 255, 255, 0.5);
   padding: 9px 296px 9px 25px;
   background-color: rgba(0, 0, 0, 0);
 }
 
 .form__form-button {
-  margin-top: 29px;
+  margin-top: 30px;
   font-weight: 500;
   border-radius: 50px;
   box-shadow: 0 4px 25px 0 rgba(21, 169, 203, 0.3);
   background: #15a9cb;
-  padding: 11px 38px;
+  padding: 12px 38px;
   color: #fff;
 }
 .form__p {
@@ -66,21 +70,29 @@
 
 @media (max-width: 1000px) {
   .form {
-    padding-bottom: 56px;
+    background-size: contain;
+    width: 1024px;
+    padding: 70px 0 57px 0;
   }
   .form__title-h2 {
+    padding: 0;
     font-size: 32px;
   }
   .form__title-h3 {
     font-size: 20px;
+    padding-left: 18px;
+    padding-top: 17px;
   }
   .form__form {
-    gap: 20px;
+    gap: 21px;
+    padding-top: 47px;
   }
   .form__form-input {
     border: 2px solid #fff;
     font-size: 20px;
-    padding: 8px 234px 8px 23px;
+    width: 377px;
+    height: 39px;
+    padding: 10px 0px 6px 22px;
   }
 
   .form__form-button {
@@ -93,30 +105,43 @@
 }
 @media (max-width: 480px) {
   .form {
-    padding: 30px 0;
+    background-size: cover;
+    width: 330px;
+    padding: 0;
   }
   .form__title-h2 {
+    padding-top: 35px;
+    padding-right: 12px;
     font-size: 20px;
   }
   .form__title-h3 {
-    padding-top: 10px;
+    padding: 0;
+    padding-top: 13px;
+    padding-right: 10px;
     font-size: 12px;
   }
   .form__form {
     padding-top: 35px;
     gap: 15px;
+    padding-right: 10px;
   }
   .form__form-input {
+    width: 292px;
+    height: 28px;
     font-size: 14px;
     border: 1px solid #fff;
     padding: 6px 205px 6px 18px;
   }
 
   .form__form-button {
+    /* margin: 30px 59px 0 57px; */
+    width: 174px;
     font-size: 16px;
     padding: 10px 26px;
   }
   .form__p {
     font-size: 11px;
+    padding-bottom: 30px;
+    padding-right: 5px;
   }
 }
