@@ -72,18 +72,20 @@
 }
 
 .about__list-item-button-left {
-  border: none;
+  background-image: url("../img/Left.svg");
   width: 38px;
   height: 38px;
-  background-image: url("../img/Left.png");
   background-repeat: no-repeat;
-  background-position: center;
   border-radius: 100%;
 }
 .about__list-item-button-right {
+  border: none;
+  border-radius: 100%;
   background-image: url("../img/Right.svg");
-  width: 83px;
-  height: 88px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 38px;
+  height: 38px;
 }
 
 @media (max-width: 1232px) {
